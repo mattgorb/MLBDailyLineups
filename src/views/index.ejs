@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset = "UTF-8">
+      <title>Daily MLB Lineups</title>
+
+  <!-- Basic Page Needs
+  �������������������������������������������������� -->
+  <meta charset="utf-8">
+  <title>Skeleton: Responsive CSS Boilerplate</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  �������������������������������������������������� -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  �������������������������������������������������� -->
+ <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  �������������������������������������������������� -->
+  <link rel="stylesheet" href="http://getskeleton.com/dist/css/normalize.css">
+  <link rel="stylesheet" href="http://getskeleton.com/dist/css/skeleton.css">
+  <link rel="stylesheet" href="http://getskeleton.com/css/custom.css">
+
+  <!-- Scripts
+  �������������������������������������������������� -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://getskeleton.com/js/site.js"></script>
+  <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+
+  <!-- Favicon
+  �������������������������������������������������� -->
+  <link rel="icon" type="image/png" href="dist/images/favicon.png">
+
+
+	<style>
+	    td {
+	  font-size: 0.8em;
+	    line-height: .9;
+	   word-wrap: break-word;
+	}
+	th {
+		      font-size: 0.8em;
+		         line-height: 1.1;
+	   word-wrap: break-word;
+	}
+	.player {
+	  font-size: .9em;
+	    line-height: .9;
+	   margin-top: 11px;
+	   text-align:center;
+	   margin-left:10px;
+	}
+	.player:after{content: "\A";white-space: pre;}
+	.pos,.namelf,.batting {
+	    display:inline;
+	    float: left;
+	}
+
+	.gameBox{
+	   border-style:solid; 
+	   margin-top: 15px; 
+	   padding-top:3px;
+	   border-color:#888;
+	   border-width:1.5px;
+	}
+
+	.pos:before,.namelf:before {
+	  content: "\00a0 \00a0 ";
+	}
+	.logoHeader{
+	  display: table;
+	    width:100%;
+	}
+	.topBox{
+	     vertical-align:middle;
+	     text-align:center;
+	     display:table-cell;
+	}
+	img {
+	    width:4em;
+	    height: auto;
+	}
+	.teamheader{
+	    width: 50%;
+	    float: left;
+	    text-align:center;
+	    background-color:#1b2e4d;
+	    color:white;
+	}
+	.pitching{
+	   width: 100%;
+	    
+
+
+	   margin-top:10px;
+	   border-top:solid; 
+	   border-color:#888;
+	   border-width:1px;
+	}
+	.pitcher{
+	    overflow:hidden;
+	    width: 50%;
+	    float: left;
+
+	}
+	.pitcherDiv{
+	    text-indent: 10px;
+	    font-size: .9em;
+	}
+
+
+	</style>
+   </head>
+   <body className="code-snippets-visible">
+      <div id = "app"><%- markup -%></div>
+      <script src = "/js/bundle.js"></script>
+   </body>
+</html>
